@@ -8,6 +8,7 @@ import { HabitacionesComponent } from './pages/habitaciones/habitaciones.compone
 import { ListadoHabitacionesComponent } from './pages/listado-habitaciones/listado-habitaciones.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import {SharedModule} from "../shared/shared.module";
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { BlogComponent } from './pages/blog/blog.component';
   ],
   imports: [
     CommonModule,
-    HotelRoutingModule
+    HotelRoutingModule,
+    SharedModule
   ]
 })
 export class HotelModule { }
