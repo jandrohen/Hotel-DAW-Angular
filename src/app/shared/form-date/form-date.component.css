@@ -32,15 +32,6 @@ th[sortable].desc:before {
   -ms-transform: rotate(180deg);
 }
 
-/* Filtering table demo */
-ngbd-table-filtering span.ngb-highlight {
-  background-color: yellow;
-}
-
-/* Complete table demo */
-ngbd-table-complete span.ngb-highlight {
-  background-color: yellow;
-}
 
 ngb-carousel .picsum-img-wrapper {
   position: relative;

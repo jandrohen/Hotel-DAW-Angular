@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+@charset "UTF-8";
+/*----------------------------------------
+BOTÓN NORMAL
+------------------------------------------*/
+
+.bg-primary {
+  background-color: #521e59 !important; }
+
+.text-primary {
+  color: #521e59 !important; }
+
+.btn-primary {
+  background-color: #521e59 !important;
+  border-color: #521e59 !important; }
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #521e59 !important; }
+
+.btn-primary:active {
+  background-color: #521e59 !important;
+  border-color:#521e59 !important; }
+
+.btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(82, 30, 89, 0.7) !important;
+  box-shadow: 0 0 0 0.2rem rgba(82, 30, 89, 0.7) !important; }
+
+/*----------------------------------------
+BOTÓN OUTLINE
+------------------------------------------*/
+.btn-outline-primary {
+  background-color: #521e59 !important;
+  border-color: #521e59 !important;
+  color: #FFFFFF !important; }
+
+.btn-outline-primary:focus {
+  background-color: #9e54a8 !important;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(214, 169, 222, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(214, 169, 222, 0.5) !important; }
+/*--------------------------
+ESTILOS DEL DISEÑO
+---------------------------*/
+html {
+  font-size: 13px; }
+
+body {
+  color: #44484a;
+  font-family: 'Open Sans', sans-serif; }
+
+/*.card:hover {*/
+/*  -webkit-box-shadow: 0 0 10px #0c0c0c3b;*/
+/*  box-shadow: 0 0 10px #0c0c0c3b; }*/
+
+/*------------------------
+SHOW DE LOS MEDIAS QUERIES
+------------------------*/
+@media (min-width: 768px) {
+  html {
+    font-size: 16px; } }
+
+/*# sourceMappingURL=estilos.css.map */
