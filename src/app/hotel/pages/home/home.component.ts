@@ -12,6 +12,7 @@ import { Component, OnInit } from '@angular/core';
         left: 0;
         z-index: 1;
       }
+
     `
   ]
 })
@@ -21,5 +22,13 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+ver(){
+  let menu = document.getElementById('menu-principal');
+
+    if (menu!.classList.contains('show'))
+      menu!.classList.remove('show');
+    else
+    document.getElementById('menu-principal')!.classList.add('show');
+}
 
 }

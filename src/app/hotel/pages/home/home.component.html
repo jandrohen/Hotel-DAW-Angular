@@ -1,16 +1,17 @@
 <header>
 <div class="container">
   <nav class="navbar navbar-dark  navbar-expand-md">
-    <div class="container-fluid">
+
       <a href="#" class="navbar-brand">
         <img src="../../../../assets/img/logo.png" alt="Logo del sitio" width="150" height="auto">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal"
               aria-controls="menu-principal"
-              aria-expanded="false" aria-label="Desplegar menu de navegación">
+              aria-expanded="false" aria-label="Desplegar menu de navegación"
+      (click)="ver()">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="menu-principal">
+      <div class="collapse navbar-collapse " id="menu-principal">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a href="#" class="nav-link active">Inicio</a></li>
           <li class="nav-item"><a href="#" class="nav-link active">Habitaciones</a></li>
@@ -19,7 +20,7 @@
           <li class="nav-item"><a href="#" class="nav-link disabled" >Contactos</a></li>
         </ul>
       </div>
-    </div>
+
   </nav>
 </div>
 </header>
