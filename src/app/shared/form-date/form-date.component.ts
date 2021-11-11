@@ -35,13 +35,10 @@ import {NgbDate, NgbCalendar, NgbDateParserFormatter} from '@ng-bootstrap/ng-boo
 export class FormDateComponent{
   hoveredDate: NgbDate | null = null;
 
-  fromDate: NgbDate | null;
-  toDate: NgbDate | null;
+  fromDate!: NgbDate | null;
+  toDate!: NgbDate | null;
 
-  constructor(private calendar: NgbCalendar, public formatter: NgbDateParserFormatter) {
-    this.fromDate = calendar.getToday();
-    this.toDate = calendar.getNext(calendar.getToday(), 'd', 10);
-  }
+  constructor(private calendar: NgbCalendar, public formatter: NgbDateParserFormatter) {  }
 
   onDateSelection(date: NgbDate) {
     if (!this.fromDate && !this.toDate) {
@@ -70,5 +67,13 @@ export class FormDateComponent{
     const parsed = this.formatter.parse(input);
     return parsed && this.calendar.isValid(NgbDate.from(parsed)) ? NgbDate.from(parsed) : currentValue;
   }
-
+  InitInput(){
+    this.fromDate = this.calendar.getToday();
+    this.toDate = this.calendar.getNext(this.calendar.getToday(), 'd', 10);
+    // let input = document.getElementById('input-hidden');
+    // if (input!.classList.contains('input-show'))
+    //   input!.classList.remove('input-show');
+    // else
+    //   input!.classList.add('input-show');
+  }
 }

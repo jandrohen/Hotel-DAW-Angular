@@ -1,0 +1,9 @@
+.superponer {
+  top: -4rem;
+}
+
+@media(max-width:768px) {
+  .superponer{
+    top: 0;
+  }
+}

@@ -46,3 +46,21 @@ ngb-carousel .picsum-img-wrapper>img {
   bottom: 0;
   right: 0;
 }
+.card-body{
+  justify-content: center;
+}
+
+.input-show{
+  display: none;
+}
+.card {
+  -webkit-box-shadow: 0 0 10px #0c0c0c3b;
+  box-shadow: 0 0 10px #0c0c0c3b; }
+@media (max-width:992px) {
+  form{
+    display: grid;
+  }
+  button{
+
+  }
+}

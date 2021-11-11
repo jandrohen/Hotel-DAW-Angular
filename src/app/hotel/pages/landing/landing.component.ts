@@ -10,8 +10,10 @@ import {IImagesConfig} from "../../../shared/slider/slider.interfaces";
         height: 100%;
         width: 100%;
       }
+
     `
-  ]
+  ],
+  styleUrls: ['./landing.component.css']
 })
 export class LandingComponent implements OnInit {
 
