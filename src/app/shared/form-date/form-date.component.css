@@ -53,9 +53,7 @@ ngb-carousel .picsum-img-wrapper>img {
 .input-show{
   display: none;
 }
-.card {
-  -webkit-box-shadow: 0 0 10px #0c0c0c3b;
-  box-shadow: 0 0 10px #0c0c0c3b; }
+
 @media (max-width:992px) {
   form{
     display: grid;

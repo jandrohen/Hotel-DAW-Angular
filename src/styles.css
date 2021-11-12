@@ -47,6 +47,9 @@ html {
 body {
   color: #44484a;
   font-family: 'Poppins', sans-serif; }
+h1{
+  color: #000000;
+}
 
 /*.card:hover {*/
 /*  -webkit-box-shadow: 0 0 10px #0c0c0c3b;*/

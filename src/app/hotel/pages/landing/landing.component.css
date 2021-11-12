@@ -1,7 +1,11 @@
 .superponer {
   top: -4rem;
+  -webkit-box-shadow: 0 0 10px #0c0c0c3b;
+  box-shadow: 0 0 10px #0c0c0c3b;
 }
-
+.section-background{
+  background-image: url("assets/img/SalonMar.jpg");
+}
 @media(max-width:768px) {
   .superponer{
     top: 0;
