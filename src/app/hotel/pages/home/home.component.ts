@@ -12,13 +12,31 @@ import { Component, OnInit } from '@angular/core';
         left: 0;
         z-index: 1;
       }
+      /*::ng-deep .carousel{*/
+      /* height: 370px !important;*/
 
+      /*}*/
     `
   ]
 })
 export class HomeComponent implements OnInit {
-
-  constructor() {}
+  images = [
+    {path: 'assets/img/terraza.jpg'},
+    {path: 'assets/img/balcon.jpg'},
+    {path: 'assets/img/bar.jpg'},
+    {path: 'assets/img/bodas.jpg'},
+    {path: 'assets/img/conferencias.jpg'},
+    {path: 'assets/img/entrada.jpg'},
+    {path: 'assets/img/panoramicaMonte.jpg'},
+    {path: 'assets/img/sombrillas.jpg'},
+    {path: 'assets/img/restaurante2.jpg'},
+    {path: 'assets/img/gimnasio.jpg'},
+    {path: 'assets/img/restaurante.jpg'},
+    {path: 'assets/img/piscina.jpg'},
+    {path: 'assets/img/habitacion2.jpg'},
+  ]
+  constructor() {
+  }
 
   ngOnInit(): void {
 

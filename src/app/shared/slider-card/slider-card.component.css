@@ -1,0 +1,58 @@
+.w-100 {
+  width: 100%!important;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.cards {
+  width: calc(100% - 80px);
+  overflow: hidden;
+}
+
+.overflow {
+  position: relative;
+  transition: left 0.5s ease-in-out;
+}
+
+.card {
+  margin-right: 10px;
+  -webkit-box-shadow: 0 0 10px #0c0c0c3b;
+  box-shadow: 0 0 10px #0c0c0c3b;
+}
+
+.no-right-margin {
+  margin-right: 0px;
+}
+
+/*.card span {*/
+/*  font-size:48px;*/
+/*  position: absolute;*/
+/*  top: 15%;*/
+/*  left: 50%;*/
+/*  transform: translate(-50%, -50%);*/
+/*}*/
+
+
+
+.left,
+.right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left.disabled, .right.disabled {
+  background-color:#CCC;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}

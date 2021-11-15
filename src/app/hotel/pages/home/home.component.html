@@ -3,7 +3,7 @@
   <nav class="navbar navbar-dark  navbar-expand-md">
 
       <a href="#" class="navbar-brand ">
-        <img src="../../../../assets/img/logo.png" alt="Logo del sitio" width="100px" height="auto">
+        <img src="assets/img/logo.png" alt="Logo del sitio" width="100px" height="auto">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal"
               aria-controls="menu-principal"
@@ -13,11 +13,11 @@
       </button>
       <div class="collapse navbar-collapse " id="menu-principal">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Habitaciones</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Restaurante</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Nosotros</a></li>
-          <li class="nav-item"><a href="#" class="nav-link" >Contactos</a></li>
+          <li class="nav-item"><a href="/hotel/landing" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="/hotel/habitaciones" class="nav-link">Habitaciones</a></li>
+          <li class="nav-item"><a href="/hotel/restaurante" class="nav-link">Restaurante</a></li>
+          <li class="nav-item"><a href="/hotel/nosotros" class="nav-link">Nosotros</a></li>
+          <li class="nav-item"><a href="/hotel/contactos" class="nav-link" >Contactos</a></li>
         </ul>
       </div>
 
@@ -25,4 +25,141 @@
 </div>
 </header>
 <router-outlet></router-outlet>
+<section>
+  <!--SECCIÓN PHOTOS -->
+  <section >
+    <div class="container" >
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="mb-3 mt-5 ml-5">
+            <h5 class="card-subtitle mb-1 text-primary font-weight-bold">ABOUT US</h5>
+            <h1 class="card-title " style="font-weight: 900;">See our latest photos from restaurant and hotel</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="container-fluid">
+      <carousel
+        [images]="images">
+      </carousel>
 
+    </section>
+  </section>
+
+</section>
+
+
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+  <div class="container-fluid m-0 p-0">
+
+    <footer class="text-white text-center text-lg-start bg-black">
+      <!-- Grid container -->
+      <div class="container-fluid p-4">
+        <!--Grid row-->
+        <div class="row mt-4">
+          <!--Grid column-->
+          <div class="col-lg-1">
+
+          </div>
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4 text-justify  mb-md-0">
+            <div class="col-8">
+            <h5 class="text-uppercase text-left text-justify mb-3 ">Monte Igueldo Hotel</h5>
+
+            <p class="text-left text-justify">
+              Our hotel is an image of quality and profesionalism combined with hard work and precision. You can expect only the best services from our staff.
+            </p>
+
+            <div class="mt-4">
+              <!-- Facebook -->
+              <a type="button" class="btn btn-circle btn-lg mr-1" style="background: #3b5998"><i class="fab fa-facebook-f fa-fw"></i></a>
+              <!-- Twitter -->
+              <a type="button" class="btn btn-circle btn-lg mr-1" style="background: #00acee"><i class="fab fa-twitter"></i></a>
+              <!-- Google + -->
+              <a type="button" class="btn btn-circle btn-lg mr-1" style="background: #de5246"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 pb-1">Useful links</h5>
+            <ul class="fa-ul" style="margin-left: 1.65em;">
+              <li class="mb-1">
+                <a class="text-primary nav-link" href="">Blog</a>
+              </li>
+              <li class="mb-1">
+                <a class="text-primary nav-link" href="">Rooms</a>
+              </li>
+              <li class="mb-1">
+                <a class="text-primary nav-link" href="">Gift Card</a>
+              </li>
+              <li class="mb-1">
+                <a class="text-primary nav-link" href="">Testimonials</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 pb-1">Privacy</h5>
+            <ul class="fa-ul" style="margin-left: 1.65em;">
+              <li class="mb-1">
+                <a class="text-primary nav-link" href="">Career</a>
+              </li>
+              <li class="mb-1">
+                <a class="text-primary nav-link" href="">About Us</a>
+              </li>
+              <li class="mb-1">
+                <a class="text-primary nav-link" href="">Contact Us</a>
+              </li>
+              <li class="mb-1">
+                <a class="text-primary nav-link" href="">Services</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Contact Info</h5>
+            <ul class="fa-ul" style="margin-left: 1.65em;">
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">monteigueldo@monteigueldo.com</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+34 943 210 211</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Paseo de Igeldo s/n Donostia-San Sebastian</span>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="container p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="row">
+          <div class="col-6">
+       <p class="text-lg-start d-inline">
+         Copyright ©2021 All rights reserved | Hotel Monte Igueldo
+       </p>
+          </div>
+          <div class="col-6">
+        <p class="text-lg-end">
+          <a class="text-primary nav-link p-0" href="https://mdbootstrap.com/">www.jandrohen.es</a>
+        </p>
+            </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+  </div>
+  <!-- End of .container -->

@@ -4,12 +4,15 @@ import { FormsModule } from '@angular/forms';
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import { SliderComponent } from './slider/slider.component';
 import { FormDateComponent } from './form-date/form-date.component';
+import { SliderCardComponent } from './slider-card/slider-card.component';
+import {Config} from "./slider-card/slider-card.config";
 
 
 @NgModule({
   declarations: [
     SliderComponent,
-    FormDateComponent
+    FormDateComponent,
+    SliderCardComponent,
   ],
   imports: [
     CommonModule,
@@ -21,6 +24,10 @@ import { FormDateComponent } from './form-date/form-date.component';
     FormDateComponent,
     FormsModule,
     NgbModule,
+    SliderCardComponent
+  ],
+  providers:[
+    Config
   ]
 })
 export class SharedModule { }

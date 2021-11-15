@@ -1,0 +1,41 @@
+<div class="container" #container>
+  <div
+    role="button"
+    class="left btn btn-primary"
+    *ngIf="totalPages > 1"
+    (click)="currentPage != 1 && changePage(-1)"
+    [ngClass]="{ disabled: currentPage === 1 }"
+  ><span class="fas fa-arrow-left fa-fw"></span>
+  </div>
+
+  <div class="cards " [ngClass]="{ 'w-100': totalPages === 1 }">
+    <div
+      class="overflow"
+      [ngStyle]="{ width: overflowWidth, left: pagePosition }"
+    >
+      <div
+        class="card text-center  d-inline-block"
+        *ngFor="let i of cardCustom; let index = index"
+        [ngStyle]="{ width: cardWidth }"
+      >
+        <button class="btn btn-primary btn-circle btn-xl mt-3"><span class="{{i.icon}}  fa-fw"></span></button>
+
+        <div class="card-body mb-3">
+          <h1 class="card-title">{{i.title}}</h1>
+          <div class="card-text ">{{i.description}}</div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <div
+    role="button"
+    class="right btn btn-primary"
+    *ngIf="totalPages > 1"
+    (click)="currentPage != totalPages && changePage(+1)"
+    [ngClass]="{ disabled: currentPage === totalPages }"
+  >
+    <span class="fas fa-arrow-right fa-fw"></span>
+  </div>
+</div>

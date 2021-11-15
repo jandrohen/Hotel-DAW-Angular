@@ -5,7 +5,8 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { HabitacionesComponent } from './pages/habitaciones/habitaciones.component';
 import {HomeComponent} from "./pages/home/home.component";
 import { LandingComponent } from './pages/landing/landing.component';
-import { ListadoHabitacionesComponent } from './pages/listado-habitaciones/listado-habitaciones.component';
+import {NosotrosComponent} from "./pages/nosotros/nosotros.component";
+import {RestauranteComponent} from "./pages/restaurante/restaurante.component";
 
 const routes: Routes = [
   {
@@ -21,8 +22,12 @@ const routes: Routes = [
         component:  HabitacionesComponent
       },
       {
-        path: 'listado-habitaciones',
-        component:  ListadoHabitacionesComponent
+        path: 'restaurante',
+        component:  RestauranteComponent
+      },
+      {
+        path: 'nosotros',
+        component:  NosotrosComponent
       },
       {
         path: 'contacto',

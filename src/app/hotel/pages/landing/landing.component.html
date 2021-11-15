@@ -1,8 +1,10 @@
+<!--SECCIÓN IMG SLIDER MENU-->
 <section>
-  <app-slider [images]="images"></app-slider>
+  <app-slider [images]="imagesCustomConfig"></app-slider>
 
 </section>
 
+<!--SECCIÓN FORM Y NOSOTROS-->
 <section>
 
   <div class="container-md ">
@@ -43,22 +45,247 @@
 
 </section>
 
-<section class="section-background">
-<!--  <div class="container-fluid p-0" >-->
-<!--      <img class="img-fluid" src="assets/img/SalonMar.jpg" alt="Logo del sitio" width="100%" height="auto">-->
-<!--  </div>-->
+<!--SECCIÓN CARDS COMODIDADES -->
+<section class="section-background  ">
+  <div class="container" >
     <div class="row">
       <div class="col-lg-4">
-        <div class="card border-0 mb-3">
-          <div class="card-body">
+        <div class="mb-3 mt-5 ml-5">
             <h5 class="card-subtitle mb-1 text-primary font-weight-bold">ABOUT US</h5>
-            <h1 class="card-title " style="font-weight: 900;">Trust and quality are our atuus</h1>
-            <p class="card-text font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            <a href="#" class="btn btn-primary">read more -></a>
+            <h1 class="card-title text-white" style="font-weight: 900;">Trust and quality are our atuus</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="container-fluid" style="padding-bottom: 3.125rem">
+    <app-slider-card ></app-slider-card>
+
+  </section>
+</section>
+
+<!--SECCIÓN TESTIMONIOS -->
+<section style="background-color: #F8F8F8;">
+
+  <div class="container-fluid p-0">
+    <div class="row p-0 m-0">
+      <div class="col-md-2 "></div>
+      <div class="col-md-5 align-self-center p-0">
+        <div class="container align-self-center">
+        <div class="card  border-0 mb-3">
+          <div class="card-body" style="background-color: #F8F8F8;">
+            <h5 class="card-subtitle mb-1 text-primary font-weight-bold">Testimonials</h5>
+            <h1 class="card-title " style="font-weight: 900;">We trust our customers</h1>
+            <div class="card  testimonials border-0">
+              <div class="px-2 py-2">
+                <div class="d-flex pt-3">
+                  <div><img src="https://i.imgur.com/hczKIze.jpg" width="50" class="rounded-circle"></div>
+                  <div class="ml-2"> <span class="name">Dan Spratling</span>
+                    <p class="para">Company name</p>
+                  </div>
+                </div>
+                <span class="maintxt">I'm very glad I had the opportunity to visit this hotel. The stuff is very friendly and I will definetly visit the hotel again next year.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5 p-0" >
+        <img class="img-fluid" style="height: 100%;" src="assets/img/entrada2.jpg" >
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!--SECCIÓN RESTAURANTE -->
+<section>
+  <div class="container  mt-5">
+
+  <div class="row">
+    <div class="col-6">
+      <div class="card border-0">
+        <div class="card-body">
+          <h5 class="card-subtitle mb-1 text-primary font-weight-bold">Restaurant</h5>
+          <h1 class="card-title " style="font-weight: 900;">Explore our menu and eat what you want</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card restaurant">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="assets/img/food.jpg" class="img-fluid rounded-start"  alt="...">
+            </div>
+            <div class="col-md-8 d-flex">
+              <div class="card-body align-self-center">
+                <h5 class="card-subtitle text-primary font-weight-bold">Food</h5>
+                <h5 class="card-subtitle text-black font-weight-bold mb-3">Fresh fish and onions</h5>
+                <p class="font-weight-bold text-muted">Fresh food directly from our restaurant ready coocked for you and you familly</p>
+
+              </div>
+              <button class="right btn btn-primary btn-lg align-self-end">
+                <span class="fas fa-arrow-right fa-fw"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card restaurant">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="assets/img/food1.jpg" class="img-fluid rounded-start"  alt="...">
+            </div>
+            <div class="col-md-8 d-flex">
+              <div class="card-body align-self-center">
+                <h5 class="card-subtitle text-primary font-weight-bold">DESERT</h5>
+                <h5 class="card-subtitle text-black font-weight-bold mb-3">Chocolate cupcakes</h5>
+                <p class="font-weight-bold text-muted">Fresh food directly from our restaurant ready coocked for you and you familly</p>
+
+              </div>
+              <button class="right btn btn-primary btn-lg align-self-end">
+                <span class="fas fa-arrow-right fa-fw"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card restaurant">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="assets/img/food1.jpg" class="img-fluid rounded-start"  alt="...">
+            </div>
+            <div class="col-md-8 d-flex">
+              <div class="card-body align-self-center">
+                <h5 class="card-subtitle text-primary font-weight-bold">DESERT</h5>
+                <h5 class="card-subtitle text-black font-weight-bold mb-3">Chocolate cupcakes</h5>
+                <p class="font-weight-bold text-muted">Fresh food directly from our restaurant ready coocked for you and you familly</p>
+
+              </div>
+              <button class="right btn btn-primary btn-lg align-self-end">
+                <span class="fas fa-arrow-right fa-fw"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card restaurant">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="assets/img/food.jpg" class="img-fluid rounded-start"  alt="...">
+            </div>
+            <div class="col-md-8 d-flex">
+              <div class="card-body align-self-center">
+                <h5 class="card-subtitle text-primary font-weight-bold">Food</h5>
+                <h5 class="card-subtitle text-black font-weight-bold mb-3">Fresh fish and onions</h5>
+                <p class="font-weight-bold text-muted">Fresh food directly from our restaurant ready coocked for you and you familly</p>
+
+              </div>
+              <button class="right btn btn-primary btn-lg align-self-end">
+                <span class="fas fa-arrow-right fa-fw"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+<!--SECCIÓN BLOG -->
+<section>
+  <div class="container mt-5">
+
+    <div class="row ">
+      <div class="col-6">
+        <div class="card border-0">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-1 text-primary font-weight-bold">Blog</h5>
+            <h1 class="card-title " style="font-weight: 900;">Read our newest blog
+              post right away</h1>
           </div>
         </div>
       </div>
     </div>
 
+    <div class="row">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-6">
+        <div class="col">
+          <div class="card restaurant mb-3 text-center">
+            <img src="assets/img/sport.jpg" class="card-img-top" alt="...">
+            <div class="card-body p-3">
+              <h5 class="card-subtitle text-primary font-weight-bold">FOOD AND LIFE</h5>
+              <h5 class="card-subtitle text-black font-weight-bold mb-3">Succed in hotel business</h5>
+              <p class="font-weight-bold text-muted">Fresh food directly from our restaurant ready coocked for you and you familly</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card restaurant  text-center">
+            <img src="assets/img/foodBlog.jpg" class="card-img-top" alt="...">
+            <div class="card-body p-3">
+              <h5 class="card-subtitle text-primary font-weight-bold">COOKING</h5>
+              <h5 class="card-subtitle text-black font-weight-bold mb-3">Cooking delicious food</h5>
+              <p class="font-weight-bold text-muted">Fresh food directly from our restaurant ready coocked for you and you familly</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card restaurant text-center">
+            <img src="assets/img/fruitBlog.jpg" class="card-img-top" alt="...">
+            <div class="card-body p-3">
+              <h5 class="card-subtitle text-primary font-weight-bold">FRUITS</h5>
+              <h5 class="card-subtitle text-black font-weight-bold mb-3">Getting fresh fruits</h5>
+              <p class="font-weight-bold text-muted">Fresh food directly from our restaurant ready coocked for you and you famillyy</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card restaurant text-center">
+            <img src="assets/img/fruitBlog.jpg" class="card-img-top" alt="...">
+            <div class="card-body p-3">
+              <h5 class="card-subtitle text-primary font-weight-bold">FRUITS</h5>
+              <h5 class="card-subtitle text-black font-weight-bold mb-3">Getting fresh fruits</h5>
+              <p class="font-weight-bold text-muted">Fresh food directly from our restaurant ready coocked for you and you famillyy</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card restaurant  text-center">
+            <img src="assets/img/foodBlog.jpg" class="card-img-top" alt="...">
+            <div class="card-body p-3">
+              <h5 class="card-subtitle text-primary font-weight-bold">COOKING</h5>
+              <h5 class="card-subtitle text-black font-weight-bold mb-3">Cooking delicious food</h5>
+              <p class="font-weight-bold text-muted">Fresh food directly from our restaurant ready coocked for you and you familly</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card restaurant mb-3 text-center">
+            <img src="assets/img/sport.jpg" class="card-img-top" alt="...">
+            <div class="card-body p-3">
+              <h5 class="card-subtitle text-primary font-weight-bold">FOOD AND LIFE</h5>
+              <h5 class="card-subtitle text-black font-weight-bold mb-3">Succed in hotel business</h5>
+              <p class="font-weight-bold text-muted">Fresh food directly from our restaurant ready coocked for you and you familly</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
+
+
