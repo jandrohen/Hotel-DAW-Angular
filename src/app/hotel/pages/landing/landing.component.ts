@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import {IImagesConfig} from "../../../shared/slider/slider.interfaces";
 import {ConfigService} from "../../../services/config/config.service";
 import {Config} from "./landing.config";
-import {ICardCustom} from "../../../shared/slider-card/slider-card.interfaces";
-import {config} from "rxjs";
 
 @Component({
   selector: 'app-landing',
