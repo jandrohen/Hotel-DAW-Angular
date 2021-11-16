@@ -16,6 +16,9 @@ import { Component, OnInit } from '@angular/core';
       /* height: 370px !important;*/
 
       /*}*/
+      .nav-item{
+        text-align: right;
+      }
     `
   ]
 })

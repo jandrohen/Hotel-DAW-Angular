@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {NgbDate, NgbCalendar, NgbDateParserFormatter} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -32,14 +32,17 @@ import {NgbDate, NgbCalendar, NgbDateParserFormatter} from '@ng-bootstrap/ng-boo
   `  ],
   styleUrls: ['./form-date.component.css']
 })
-export class FormDateComponent{
+export class FormDateComponent implements OnInit{
   hoveredDate: NgbDate | null = null;
-
   fromDate!: NgbDate | null;
   toDate!: NgbDate | null;
+  @ViewChild('dpToRoom') dpToRoom!: ElementRef;
 
-  constructor(private calendar: NgbCalendar, public formatter: NgbDateParserFormatter) {  }
-
+  constructor(private calendar: NgbCalendar,
+              public formatter: NgbDateParserFormatter) {}
+  ngOnInit(): void {
+    console.log(this.dpToRoom);
+  }
   onDateSelection(date: NgbDate) {
     if (!this.fromDate && !this.toDate) {
       this.fromDate = date;
@@ -66,6 +69,7 @@ export class FormDateComponent{
   validateInput(currentValue: NgbDate | null, input: string): NgbDate | null {
     const parsed = this.formatter.parse(input);
     return parsed && this.calendar.isValid(NgbDate.from(parsed)) ? NgbDate.from(parsed) : currentValue;
+
   }
   InitInput(){
     this.fromDate = this.calendar.getToday();
@@ -76,4 +80,10 @@ export class FormDateComponent{
     // else
     //   input!.classList.add('input-show');
   }
+  prueba(e:any){
+    console.log(e);
+    this.dpToRoom.nativeElement.onFocus = true;
+  }
+
+
 }

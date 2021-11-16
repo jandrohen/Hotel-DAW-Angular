@@ -52,13 +52,16 @@
   </div>
   <div class="form-group ml-2 ">
     <div class="input-group  mb-2">
-      <input #dpToRoom
-             class="form-control"
-             placeholder="Persons"
-             name="dpToRoom"
-             >
+      <select #dpToRoom
+              id="inlineFormCustomSelectPref"
+              class="form-control">
+        <option  selected>Persons...</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
       <div class="input-group-append">
-        <button class="btn btn-outline-primary" (click)="datepicker.toggle()" type="button"><i class="fas fa-person-booth"></i></button>
+        <button class="btn btn-outline-primary" (click)="prueba($event)" type="button"><i class="fas fa-person-booth"></i></button>
       </div>
     </div>
   </div>
