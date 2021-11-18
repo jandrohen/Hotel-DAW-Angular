@@ -1,1 +1,44 @@
-<p>blog works!</p>
+<!--SECCIÓN IMG SLIDER MENU-->
+<section >
+  <div id="image" class="container-fluid d-flex p-0" >
+    <!--    <img style="height: 30rem" class="img-fluid" src="assets/img/nocheHotel.jpg" width="100%" alt="">-->
+
+    <div class="container d-flex align-items-center" >
+      <div class="row">
+        <h1 class="text-white" >BLOG</h1>
+        <h3 class="text-white" >HOME | BLOG</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--SECCIÓN RESTAURANTE -->
+<section>
+  <div class="container  mt-5">
+
+    <div class="row">
+      <div class="col-6">
+        <div class="card border-0">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-1 text-primary font-weight-bold">Blog</h5>
+            <h1 class="card-title " style="font-weight: 900;">Personas</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" *ngFor="let blog of blogList;let index = index">
+      <div class="col-lg-8 mx-auto">
+      <div class="card border-0 mb-3 text-center">
+          <img src="assets/img/sport.jpg" class="card-img-top img-fluid"  alt="...">
+
+        <div class="card-body p-3" >
+          <h5 class="card-subtitle text-primary font-weight-bold">{{blog.title}}</h5>
+          <h5 class="card-subtitle text-black font-weight-bold mb-3">{{blog.subtitle}}</h5>
+          <p class="font-weight-bold text-muted">{{blog.body}}</p>
+        </div>
+      </div>
+    </div>
+      </div>
+
+  </div>
+</section>
